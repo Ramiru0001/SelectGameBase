@@ -9,10 +9,11 @@ class SelectScene :public Base {
 		eState_GameTitle
 	};
 private:
-	CFont titletext[10];
+	char game_title[10][100] = {"gametitle","ABC","ABC"};
+	CFont title_text;
+	CFont select_title_text;
 public:
 	SelectScene();
 	void Draw();
 	void Update();
-	void SetText();
 };
