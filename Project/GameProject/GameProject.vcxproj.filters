@@ -28,6 +28,9 @@
     <Filter Include="Game\SelectScene">
       <UniqueIdentifier>{89aeeabc-5583-46c7-bee8-8cd0d6f339df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\MiniGame">
+      <UniqueIdentifier>{e32d776a-80bc-41f2-8779-19494fc88cfd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
