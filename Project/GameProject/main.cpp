@@ -1,4 +1,6 @@
 #include <GLLibrary.h>
+#include "Base/Base.h"
+#include "Title/Title.h"
 #define SCREEN_WIDTH 1920
 #define SCREEN_HEIGHT 1080
 
@@ -8,25 +10,12 @@
 //グローバル変数領域
 //-------------------------------------------
 
-//動画用オブジェクト
-CVideo* video;
+
 
 void MainLoop(void) {
-	//動画の描画
-	video->Draw();
-	//再生
-	if (PUSH(CInput::eButton1))
-		video->Play();
-	//停止
-	if (PUSH(CInput::eButton2))
-		video->Stop();
-
-
-	//デバッグ文字表示
-	FONT_T()->Draw(0, 64, 1, 0, 0, "Z:Play X:Stop");
-	FONT_T()->Draw(0, 96, 1, 0, 0, "%s",video->isPlay() ? "再生中":"停止中");
-
-
+	Base::CheckKillAll();
+	Base::UpdateAll();
+	Base::DrawAll();
 }
 
 void Init(void)
@@ -97,12 +86,7 @@ void Init(void)
 	//ゲーム起動時に一度だけ呼ばれる
 	//-----------------------------------------------------
 
-	//動画の読み込み
-	video = new CVideo("R4ゲーム課題②.mp4");
-	//動画の再生
-	video->Play();
-
-
+	Base::Add(new Title());
 }
 
 
