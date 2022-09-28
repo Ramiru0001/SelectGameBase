@@ -1,11 +1,11 @@
 #include "Title.h"
-#include "../Game/Game.h"
+#include "../Game/SelectScene/SelectScene.h"
 Title::Title():Base(eType_Scene),m_title_text("C:\\Windows\\Fonts\\msgothic.ttc",64)
 {
 }
 Title::~Title() {
-	Base::KillAll();
-	Base::Add(new Game());
+	Base::KillAll(); 
+	Base::Add(new SelectScene());
 }
 void Title::Draw() {
 	m_title_text.Draw(64, 256, 0, 0, 0, "Title");

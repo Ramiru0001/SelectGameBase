@@ -8,7 +8,10 @@
     <ClCompile Include="Title\Title.cpp">
       <Filter>Title</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Game.cpp">
+    <ClCompile Include="Game\SelectScene\SelectScene.cpp">
+      <Filter>Game\SelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ShareNum.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
@@ -22,6 +25,9 @@
     <Filter Include="Title">
       <UniqueIdentifier>{244737a8-20cd-442d-870d-0365f1ad07ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\SelectScene">
+      <UniqueIdentifier>{89aeeabc-5583-46c7-bee8-8cd0d6f339df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -30,7 +36,10 @@
     <ClInclude Include="Title\Title.h">
       <Filter>Title</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Game.h">
+    <ClInclude Include="Game\SelectScene\SelectScene.h">
+      <Filter>Game\SelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ShareNum.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

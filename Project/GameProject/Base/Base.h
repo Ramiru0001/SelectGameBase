@@ -1,10 +1,8 @@
 #pragma once
 #include <GLLibrary.h>
 enum {
-	eType_Goal,
-	eType_Effect,
-	eType_UI,
 	eType_Scene,
+	eType_Game,
 };
 
 //d—Í‰Á‘¬“x

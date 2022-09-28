@@ -12,13 +12,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp" />
-    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\SelectScene\SelectScene.cpp" />
+    <ClCompile Include="Game\ShareNum.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Title\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
-    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\SelectScene\SelectScene.h" />
+    <ClInclude Include="Game\ShareNum.h" />
     <ClInclude Include="Title\Title.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
